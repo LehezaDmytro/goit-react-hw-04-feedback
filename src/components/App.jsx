@@ -11,11 +11,11 @@ export const App = () => {
 
   const handleBtn = nameBtn => {
     if (nameBtn === 'good') {
-      setGood(good + 1);
+      setGood(prevGood => prevGood + 1);
     } else if (nameBtn === 'neutral') {
-      setneutral(neutral + 1);
+      setneutral(prevNeutral => prevNeutral + 1);
     } else {
-      setbad(bad + 1);
+      setbad(prevBad => prevBad + 1);
     }
   };
 
